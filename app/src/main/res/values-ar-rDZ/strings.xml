@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EasyCode</string>
+    <string name="erreurinscriptiontaille">يجب أن يكون حجم الإدخالات بين 5 و 15 حرفًا</string>
+    <string name="inscription_1">مرحباً يا صديقي ، أنا كارينو! ما هو اسمك؟</string>
+    <string name="inscription_2">تشرفت بمقابلتك   %1$s ، أدخل كلمة مرور!</string>
+    <string name="inscription_3">هذا رائع! انقر على الزر أدناه للتسجيل</string>
+    <string name="inscription_4">جيد جدًا! أدخل بريدك الإلكتروني الآن </string>
+    <string name="inscription_5"> ممتاز! أدخل تاريخ ميلادك؟</string>
+    <string name="inscription_6"> وأخيراً اخبرني هل أنت بنت أم ولد؟</string>
+    <string name="inscriptionechouee">فشل التسجيل</string>
+    <string name="inscriptionreussie">تم التسجيل بنجاح</string>
+    <string name="loginechoué">فشل الوصول إلى الحساب</string>
+    <string name="title_activity_inscription">التسجيل</string>
+    <string name="title_activity_login">تسجيل الدخول</string>
+    <string name="erreurinscription">حدث خطأ:</string>
+    <string name="cliques_ici">اضغط هنا</string>
+    <string name="fille">بنت</string>
+    <string name="garçon">ولد</string>
+    <string name="s_inscrire">التسجيل</string>
+    <string name="entres_un_mot_de_passe">أدخل كلمة مرور</string>
+    <string name="entres_un_pseudo">أدخل اسمك</string>
+    <string name="entres_ton_e_mail">"أدخل بريدك الإلكتروني "</string>
+    <string name="valider">تم</string>
+    <string name="title_notes">الملاحظات</string>
+    <string name="title_cours">المستويات</string>
+    <string name="title_user">الحساب</string>
+</resources>

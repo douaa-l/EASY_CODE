@@ -1,0 +1,42 @@
+body
+{
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.c2{
+    height: 2150px;
+    width: 90%;
+    background-color:#FFFFFF;
+    border:  1px solid  #BDBDBD ;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 50px;
+    margin-top: 2em;      /*250px;*/
+    margin-left: 4%;
+    margin-right:3%;
+    margin-bottom:  20%;      /*265px;*/
+    box-shadow: 7px 7px #BDBDBD;
+
+}
+
+.c3{
+    padding-left: 7%;
+    padding-right: 7%;
+ 
+}
+.i1{
+    margin-top: 2em;
+    width: 350px;
+}
+.g1{
+   font-family: 'Satisfy', cursive;
+    padding-top: 9%;
+    margin-left: 0em;
+    font-size: 21px;
+    color:#FF8000;
+}
+@media screen and (max-width:500px){
+   .c2 {height:auto;width: auto;}
+      .c1 {height:auto;width: auto;}
+   .wrap{width: 100%;}
+}

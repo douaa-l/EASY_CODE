@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B1B</color>
+    <color name="colorBouton">#9EE1DD</color>
+    <color name="colorText">#666666</color>
+    <color name="jaune">#FCD501</color>
+    <color name="vert">#24B91E</color>
+    <color name="blanc">#FFFFFF</color>
+    <color name="gristransparent">#4D737373</color>
+    <color name="bleutransparent">#CC9EE1DD</color>
+    <color name="vertclair">#b5f5cf</color>
+    <color name="rougeclair">#f5c7b5</color>
+    <color name="violetclair">#e9b5f5</color>
+    <color name="bleuclair">#b5d1f5</color>
+
+
+
+</resources>

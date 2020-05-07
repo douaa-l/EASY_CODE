@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80sp"
+            android:background="@color/jaune"
+            android:gravity="center"
+            android:padding="20sp"
+            android:text="Cours facultatifs"
+            android:textColor="@color/blanc"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/accident"
+            style="@style/Boutons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="25sp"
+            android:background="@drawable/boutons2"
+            android:text="Accidents" />
+
+        <Button
+            android:id="@+id/secour"
+            style="@style/Boutons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="25sp"
+            android:background="@drawable/boutons2"
+            android:text="secours" />
+
+        <Button
+            android:id="@+id/entretien"
+            style="@style/Boutons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="25sp"
+            android:background="@drawable/boutons2"
+            android:text="entretien du véhicule" />
+
+        <Button
+            android:id="@+id/prepar"
+            style="@style/Boutons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/boutons2"
+            android:text="se préparer pour l'examen"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="189dp"
+            android:layout_height="144dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="30sp"
+            app:srcCompat="@drawable/carino" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="160sp"
+            android:background="@drawable/nuage"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="si tu veux devenir un bon conducteur lis ces cours!I Ils te seront utiles ." />
+
+    </RelativeLayout>
+
+</LinearLayout>

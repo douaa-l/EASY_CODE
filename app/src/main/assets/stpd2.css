@@ -1,0 +1,91 @@
+
+body
+{
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.c2{
+     height: 2480px;
+    width: 85%;
+    background-color:#FFFFFF;
+    border:  1px solid  #BDBDBD ;
+    border-radius: 10px;
+    padding-left: 70px;
+    padding-top: 70px;
+    margin-top: 2em;      /*250px;*/
+    margin-left: 4%;
+    margin-right: 2%;
+    margin-bottom:  20%;      /*265px;*/
+    box-shadow: 7px 7px #BDBDBD;
+     padding-left: 6%;
+    padding-right: 5%;
+
+}
+
+
+.i2{
+   width: 350px;
+     margin-top: 2em;
+     margin-left: -1.5em;
+}
+.i3{
+      width: 350px;
+     margin-top: 1.5em;
+     margin-left: 1em;
+   
+}
+.i4{
+      width: 350px;
+      
+}
+.i5{
+      width: 350px;
+   margin-top: 3.5em;
+}
+.i6{
+      width: 350px;
+      height: 80px;
+   margin-top:2em;
+}
+
+.t1{
+   margin-left: 2em;
+   margin-top: -1em;
+    color: #0489B1;
+    font-size: 20px;
+}
+.t2{
+   margin-top: 1.5em;
+   color:#FE2E2E;
+}
+.t3{
+     margin-top: 2em;
+       color:#FE2E2E;
+}
+.t4{
+   margin-top: 1.5em;
+     color:#FE2E2E;
+}
+.t5{
+   margin-top:2.5em;
+   margin-left: 3em;
+   color: #0489B1;
+   font-size: 20px;   
+}
+.u1{
+   margin-top: -1em;
+}
+.g1{
+   margin-top:2.5em;
+}
+.g2{
+   font-family: 'Satisfy', cursive;
+    padding-top: 7.5%;
+    margin-left: 0.8em;
+    font-size: 21px;
+    color:#FE2E2E;
+}
+@media screen and (max-width:500px){
+   .c2 {height:auto;width: auto;}
+   .wrap{width: 100%;}
+}

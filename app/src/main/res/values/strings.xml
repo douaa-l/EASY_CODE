@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">EasyCode</string>
+
+    <string name="title_activity_login">Identifiez vous</string>
+
+    <string name="title_activity_inscription">Inscrivez vous</string>
+    <string name="inscription_1">Bienvenue mon ami!Je suis Carrino! quel est ton nom?</string>
+    <string name="inscription_2"> Ravi de te connaitre %1$s, Saisis un mot de passe!</string>
+    <string name="inscription_3"> C"'est parfait! Clique sur le bouton en bas pour t'inscrire</string>
+    <string name="inscription_4">Trés bien !Maintenant entres ton e-mail </string>
+    <string name="inscription_5"> Excellent ! Quand est ce que tu est né ?</string>
+    <string name="inscription_6"> Et pour finir dis moi !Es-tu une fille ou un garçon?</string>
+
+    <string name="erreurinscriptiontaille">la taille de votre entrée doit etre comprise entre 5 et 15 caracteres</string>
+    <string name="inscriptionreussie">Inscription réussite</string>
+    <string name="inscriptionechouee">Inscription échouée</string>
+    <string name="erreurinscription">un erreur s\'est produite :</string>
+    <string name="loginechoué">accés au profil échoué</string>
+    <string name="entres_un_pseudo">Entre un pseudo</string>
+    <string name="entres_un_mot_de_passe">Entre un mot de passe</string>
+    <string name="entres_ton_e_mail">Entres ton e-mail</string>
+    <string name="cliques_ici">Clique ici</string>
+    <string name="valider">valider</string>
+    <string name="fille">fille</string>
+    <string name="garçon">garçon</string>
+    <string name="s_inscrire">continuer</string>
+    <string name="title_activity_debutant_expert" translatable="false" tools:ignore="MissingTranslation">DebutantExpertActivity</string>
+    <string name="title_activity_niveau" translatable="false">NiveauActivity</string>
+    <string name="title_cours">Niveaux</string>
+    <string name="title_user">profil</string>
+    <string name="title_notes">Notes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="negativephrase" translatable="false">Vous avez eu %1$d / %2$d .Révisez et revenez passer le test</string>
+    <string name="positivephrase" translatable="false">Vous avez eu %1$d /6 et vous avez débloqué le cours prochain</string>
+    <string name="themephrase" translatable="false">Vous avez eu %1$d /6 et vous avez débloqué le theme prochain</string>
+    <string name="correction" translatable="false">La réponse juste : %1$s</string>
+    <string name="testblanc" translatable="false">Vous avez eu la note de %1$d / %2$d</string>
+</resources>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <ScrollView
+            android:id="@+id/inscriptionScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/nuage"
+                        android:gravity="center"
+                        android:hapticFeedbackEnabled="false"
+                        android:text="@string/inscription_1"
+                        android:textSize="18sp"
+                        app:autoSizeTextType="none" />
+
+                    <ImageView
+                        android:id="@+id/carino1"
+                        android:layout_width="165dp"
+                        android:layout_height="121dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="0"
+                        android:adjustViewBounds="false"
+                        app:srcCompat="@drawable/carino" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextNom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/entres_un_pseudo"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/username"
+                    style="@style/ParoleUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="TextView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/nuage"
+                        android:gravity="center"
+                        android:hapticFeedbackEnabled="false"
+                        android:text="@string/inscription_2"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:autoSizeTextType="none" />
+
+                    <ImageView
+                        android:id="@+id/carino2"
+                        android:layout_width="165dp"
+                        android:layout_height="121dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="0"
+                        android:adjustViewBounds="false"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/carino" />
+
+                    <EditText
+                        android:id="@+id/editTextMdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/entres_un_mot_de_passe"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/motdepasse"
+                        style="@style/ParoleUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="TextView"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/nuage"
+                        android:gravity="center"
+                        android:text="@string/inscription_4"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:autoSizeTextType="none" />
+
+                    <ImageView
+                        android:id="@+id/carino4"
+                        android:layout_width="165dp"
+                        android:layout_height="121dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="0"
+                        android:adjustViewBounds="false"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/carino" />
+
+                    <EditText
+                        android:id="@+id/editTextEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/entres_ton_e_mail"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        style="@style/ParoleUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nuage"
+                        android:gravity="center"
+                        android:text="@string/inscription_5"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:autoSizeTextType="none"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/carino5"
+                        android:layout_width="165dp"
+                        android:layout_height="121dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="0"
+                        android:adjustViewBounds="false"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/carino" />
+
+                    <TextView
+                        android:id="@+id/editTextDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center_horizontal"
+                        android:text="@string/cliques_ici"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/date"
+                        style="@style/ParoleUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nuage"
+                        android:gravity="center"
+                        android:text="@string/inscription_6"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:autoSizeTextType="none"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/carino6"
+                        android:layout_width="165dp"
+                        android:layout_height="121dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="0"
+                        android:adjustViewBounds="false"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/carino" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/validerSexe"
+                            style="@style/Boutons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_weight="1"
+                            android:text="@string/valider"
+                             />
+
+                        <RadioGroup
+                            android:id="@+id/editSexe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:ems="10"
+                            android:gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/fille"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+
+                                android:text="@string/fille"
+                                android:textSize="24sp" />
+
+                            <RadioButton
+                                android:id="@+id/garçon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/garçon"
+                                android:textSize="24sp" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sexe"
+                        style="@style/ParoleUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inscriptionBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/nuage"
+                        android:gravity="center"
+                        android:hapticFeedbackEnabled="false"
+                        android:text="@string/inscription_3"
+                        android:textSize="18sp"
+                        android:visibility="invisible"
+                        app:autoSizeTextType="none" />
+
+                    <ImageView
+                        android:id="@+id/carino3"
+                        android:layout_width="165dp"
+                        android:layout_height="121dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="0"
+                        android:adjustViewBounds="false"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/carino" />
+
+                    <Button
+                        android:id="@+id/inscription"
+                        style="@style/Boutons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="25dp"
+                        android:paddingVertical="15dp"
+                        android:text="@string/s_inscrire"
+                        android:textSize="24dp"
+                        tools:visibility="invisible" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarInscription"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        tools:visibility="invisible" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

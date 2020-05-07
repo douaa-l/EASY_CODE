@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dou1"
+
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/titrelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/logolayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/titrelayout"
+
+        android:layout_marginTop="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/contenantlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logolayout"
+        android:paddingVertical="15dp"
+
+
+        >
+
+
+        <Button
+            android:id="@+id/login"
+            style="@style/Boutons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="s'identifier" />
+
+        <RelativeLayout
+            android:id="@+id/fondlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login">
+
+
+            <RelativeLayout
+                android:id="@+id/champs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <EditText
+                    android:id="@+id/nomUser"
+                    style="@style/champhaut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29dp"
+                    android:drawableLeft="@drawable/usericone"
+                    android:drawablePadding="10dp"
+                    android:hint="nom d'utilisateur"
+
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/MDP"
+                    style="@style/champbas"
+                    android:layout_width="285dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nomUser"
+                    android:layout_marginBottom="25dp"
+                    android:drawableLeft="@drawable/cadenasicone"
+                    android:drawablePadding="10dp"
+                    android:hint="mot de passe"
+                    android:inputType="textPassword"
+
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBarLogin"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="70dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/connecter"
+                style="@style/Boutons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="70dp"
+                android:text="Se connecter"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/inscription"
+            style="@style/Boutons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fondlogin"
+            android:text="s'inscrire"
+
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/contenantlogin"
+
+
+        >
+
+
+        <ImageView
+
+            android:id="@+id/voiturelogin"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/voiturelogin">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

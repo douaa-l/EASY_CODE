@@ -1,0 +1,33 @@
+body
+{
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.c2{
+  height: 1730px;
+    width: 75%;
+    background-color:#FFFFFF;
+    border:  1px solid  #BDBDBD ;
+    border-radius: 10px;
+    padding-left: 70px;
+    padding-top: 50px;
+    margin-top: 2em;      /*250px;*/
+    margin-left: 4%;
+    margin-right: 2%;
+    margin-bottom:  20%;      /*265px;*/
+    box-shadow: 7px 7px #BDBDBD;
+
+}
+
+
+.g1{
+   font-family: 'Satisfy', cursive;
+    padding-top: 8%;
+    margin-left: 0em;
+    font-size: 21px;
+    color:#B404AE;
+}
+@media screen and (max-width:500px){
+   .c2 {height:auto;width: auto;}
+   .wrap{width: 100%;}
+}

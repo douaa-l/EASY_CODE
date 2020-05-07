@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomnav">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cours"
+                style="@style/navBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/coursicon"
+                android:drawablePadding="10dp"
+                android:text="niveaux"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/profil"
+                style="@style/navBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/usericon"
+                android:drawablePadding="10dp"
+                android:text="profil"
+                android:textColor="@color/gristransparent"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/notes"
+                style="@style/navBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/postiticon"
+                android:drawablePadding="10dp"
+                android:text="post-it"
+                android:textColor="@color/gristransparent"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/facultatif"
+                style="@style/navBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/facultatif"
+                android:drawablePadding="10dp"
+                android:text="facultatif"
+                android:textColor="@color/gristransparent"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
+    android:background="@drawable/niveaux">
+
+    <ImageView
+        android:id="@+id/niveau1"
+        android:layout_width="120dp"
+        android:layout_height="188dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="115dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/niveau1etoiles0" />
+
+    <ImageView
+        android:id="@+id/niveau2"
+        android:layout_width="120dp"
+        android:layout_height="188dp"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="220dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/niveau2etoiles0" />
+
+    <ImageView
+        android:id="@+id/niveau3"
+        android:layout_width="120dp"
+        android:layout_height="188dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/niveau3etoiles0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="Clique sur le drapeau du  niveau débloqué que tu veux"
+        android:textSize="14sp" />
+
+</RelativeLayout>
