@@ -22,6 +22,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.easycode.Outils.Outils;
 import com.example.easycode.R;
 
 import org.json.JSONException;
@@ -38,7 +39,7 @@ public class MdpDialog extends DialogFragment {
     Button valider;
     String id_user;
 
-    private static String URL_MDP="http://192.168.1.10/users/modif_password.php";
+    private static String URL_MDP= Outils.getPath()+"users/modif_password.php";
 
 
     @Override

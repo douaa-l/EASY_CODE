@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +20,7 @@ public class SuivanteActivity extends AppCompatActivity implements GestureDetect
     TextView des=null;
     TextView title=null;
     ImageView img=null;
+    ImageView gauche,droite;
     ArrayList<String> titres=new ArrayList<>();
     ArrayList<String>images=new ArrayList<>();
     ArrayList<String>descriptions=new ArrayList<>();
@@ -62,6 +64,20 @@ public class SuivanteActivity extends AppCompatActivity implements GestureDetect
         des=findViewById(R.id.description);
         title=findViewById(R.id.titre);
         img=findViewById(R.id.img);
+        droite=findViewById(R.id.droite);
+        gauche=findViewById(R.id.gauche);
+        droite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onSwipeRight();
+            }
+        });
+        gauche.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onSwipeLeft();
+            }
+        });
 
         des.setText(description);
         title.setText(titre);

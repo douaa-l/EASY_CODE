@@ -201,6 +201,7 @@ public class TestBlancActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Button b=(Button)v;
+                b.setClickable(false);
                 int i=(int)v.getTag();
 
 

@@ -1,8 +1,10 @@
 package com.example.easycode;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -75,6 +77,7 @@ titre=findViewById(R.id.titre);
         }
         ll=findViewById(R.id.leconsContainer);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_REGIST, new Response.Listener<String>() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void onResponse(String response) {
 
@@ -86,22 +89,25 @@ titre=findViewById(R.id.titre);
                         Button cours =new Button(LeconActivity.this);
                         cours.setText(rows.get(i).getTitre());
                         cours.setTextSize(18);
-                        cours.setTextColor(getResources().getColor(R.color.blanc));
-                        cours.setPadding(10,40,10,40);
+                        cours.setTextColor(getResources().getColor(R.color.noir));
+                        cours.setPadding(30,30,30,30);
 
                         LayoutParams params = new LayoutParams(
-                                LayoutParams.MATCH_PARENT,
+                                LayoutParams.WRAP_CONTENT,
                                 LayoutParams.WRAP_CONTENT
                         );
-                        params.setMargins(0, 30, 0, 30);
-                        cours.setLayoutParams(params);
+
+                        params.setMargins(15, 20, 15, 40);
 
                        if(rows.get(i).getEtat().equals("blocked")){
-                            cours.setBackgroundColor(getResources().getColor(R.color.gristransparent));
+                            cours.setBackground(getResources().getDrawable(R.drawable.marron));
+
                         cours.setTag(i);
-                        }else{cours.setBackgroundColor(getResources().getColor(R.color.bleutransparent));
+                        }else{cours.setBackground(getResources().getDrawable(R.drawable.blanche));
+
                             cours.setTag(i);
                         }
+                       cours.setLayoutParams(params);
                         cours.setOnClickListener(clickLecon);
                         ll.addView(cours);
 

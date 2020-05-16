@@ -14,7 +14,9 @@
     <color name="rougeclair">#f5c7b5</color>
     <color name="violetclair">#e9b5f5</color>
     <color name="bleuclair">#b5d1f5</color>
-
+    <color name="noir">#000000</color>
+    <color name="bouton">#FC000D</color>
+    <color name="orange">#FEAE00</color>
 
 
 </resources>

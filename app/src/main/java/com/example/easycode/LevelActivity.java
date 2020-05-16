@@ -83,7 +83,7 @@ LinearLayout ll;
             themeDeux=(ImageView)findViewById(R.id.theme2);
             themeTrois=(ImageView)findViewById(R.id.theme3);
             boutontest=findViewById(R.id.boutontest);
-            ll=findViewById(R.id.layout);
+
 
             themeUn.setOnClickListener(themeListener);
             themeDeux.setOnClickListener(themeListener);
@@ -94,8 +94,8 @@ LinearLayout ll;
                 Button tfinal =findViewById(R.id.tfinal);
                 tfinal.setVisibility(View.VISIBLE);
                 tfinal.setOnClickListener(testblanc);
-                if(testfinal){ tfinal.setBackgroundColor(getResources().getColor(R.color.violetclair));
-                }else{tfinal.setBackgroundColor(getResources().getColor(R.color.gristransparent));}
+                if(testfinal){ tfinal.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                }else{tfinal.setBackground(getResources().getDrawable(R.drawable.buttonshape2));}
 
 
             }
@@ -130,11 +130,11 @@ etats();
 
                     System.out.println("*****************************"+etatUn+" "+etatDeux+" "+etatTrois+" "+id_theme1+" "+etattest);
                     boutontest.setTag(etattest);
-                    if(etattest.equals("blocked")){
-                        boutontest.setBackgroundColor(getResources().getColor(R.color.gristransparent));
+                   if(etattest.equals("blocked")){
+                        boutontest.setBackground(getResources().getDrawable(R.drawable.testniveaublocked));
 
                     }else {
-                        boutontest.setBackground(getResources().getDrawable(R.drawable.buttonshape));
+                        boutontest.setBackground(getResources().getDrawable(R.drawable.testniveauunblocked));
                     }
 
                     if(etatUn.equals("blocked")){

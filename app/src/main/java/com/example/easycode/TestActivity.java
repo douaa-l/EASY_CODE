@@ -211,6 +211,7 @@ Button b=(Button)v;
 
             }
             Button b=(Button)v;
+            b.setClickable(false);
             int i=(int)v.getTag();
             if((b.getText()).equals(rows.get(i).getReponseJuste())){
                 b.setBackgroundColor(getResources().getColor(R.color.vert));

@@ -7,6 +7,15 @@
     android:background="@drawable/niveaux">
 
     <ImageView
+        android:id="@+id/apropos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        app:srcCompat="@drawable/question" />
+
+    <ImageView
         android:id="@+id/niveau1"
         android:layout_width="120dp"
         android:layout_height="188dp"

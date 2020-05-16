@@ -154,7 +154,7 @@ public class TestPrimaireActivity extends AppCompatActivity {
                     updateTestNiveau(1);
                     updateTestNiveau(2);
 
-                    Intent intent=new Intent (TestPrimaireActivity.this,NiveauActivity.class);
+                    Intent intent=new Intent (TestPrimaireActivity.this,TutoActivity.class);
                 intent.putExtra("id_user",id_user);
                 startActivity(intent);
                 finish();
@@ -208,7 +208,9 @@ public class TestPrimaireActivity extends AppCompatActivity {
     public View.OnClickListener verifierReponse=new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
             Button b=(Button)v;
+            b.setClickable(false);
             int i=(int)v.getTag();
 
 

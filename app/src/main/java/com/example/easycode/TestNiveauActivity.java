@@ -235,6 +235,7 @@ if(imgid!=0){
         @Override
         public void onClick(View v) {
             Button b=(Button)v;
+            b.setClickable(false);
             int i=(int)v.getTag();
 
 

@@ -1,6 +1,9 @@
 package com.example.easycode.ui;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -38,6 +41,7 @@ public class HomeActivity extends Fragment {
     ImageView niveauUn=null;
     ImageView niveauDeux=null;
 ImageView niveauTrois=null;
+ImageView apropos;
 String etatUn="";
 String etatDeux="";
 String etatTrois="";
@@ -46,6 +50,7 @@ int id_niveau_choisi=0;
     int num_niveau=0;
     int a=0;
     boolean testfinal=false;
+    Dialog epicDialog;
 
     String id_user="";
     private static String URL_REGIST=Outils.getPath()+"users/connexion.php";
@@ -67,10 +72,13 @@ int id_niveau_choisi=0;
      niveauUn = (ImageView) getView().findViewById(R.id.niveau1);
      niveauDeux = (ImageView) getView().findViewById(R.id.niveau2);
      niveauTrois = (ImageView) getView().findViewById(R.id.niveau3);
+     epicDialog=new Dialog(getActivity());
 
      niveauUn.setOnClickListener(levelListener);
      niveauDeux.setOnClickListener(levelListener);
      niveauTrois.setOnClickListener(levelListener);
+     apropos=getView().findViewById(R.id.apropos);
+     apropos.setOnClickListener(afficheapropos);
 
 etats();
 
@@ -269,4 +277,22 @@ else {
         super.onResume();
         etats();
     }
+
+    public View.OnClickListener afficheapropos=new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            epicDialog.setContentView(R.layout.apropos);
+            ImageView closeapropos=(ImageView)epicDialog.findViewById(R.id.closeapropos);
+            closeapropos.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    epicDialog.dismiss();
+                }
+
+            });
+
+            epicDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            epicDialog.show();
+        }
+    };
 }

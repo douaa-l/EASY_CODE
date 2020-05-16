@@ -21,6 +21,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.easycode.Outils.Outils;
 import com.example.easycode.R;
 
 import org.json.JSONException;
@@ -30,7 +31,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DeleteDialog extends DialogFragment {
-    private static String URL_DELETE="http://192.168.1.6/users/delete_user.php";
+    private static String URL_DELETE= Outils.getPath()+"users/delete_user.php";
 
     ImageView close;
     Button supprimer;

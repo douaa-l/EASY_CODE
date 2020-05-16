@@ -62,6 +62,7 @@ public class DebutantExpertActivity extends AppCompatActivity {
         debutant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                debutant.setClickable(false);
                 choix="debutant";
                 pb.setVisibility(View.VISIBLE);
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_REGIST, new Response.Listener<String>() {
@@ -69,7 +70,7 @@ public class DebutantExpertActivity extends AppCompatActivity {
                     public void onResponse(String response) {
                         Toast.makeText(DebutantExpertActivity.this, R.string.inscriptionreussie, Toast.LENGTH_LONG).show();
                         pb.setVisibility(View.INVISIBLE);
-                        Intent intent = new Intent(DebutantExpertActivity.this, NiveauActivity.class);
+                        Intent intent = new Intent(DebutantExpertActivity.this, TutoActivity.class);
                         intent.putExtra("id_user",id_user);
                         startActivity(intent);
                             finish();
@@ -105,6 +106,7 @@ public class DebutantExpertActivity extends AppCompatActivity {
        expert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                expert.setClickable(false);
                 pb.setVisibility(View.VISIBLE);
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_REGIST, new Response.Listener<String>() {
                     @Override

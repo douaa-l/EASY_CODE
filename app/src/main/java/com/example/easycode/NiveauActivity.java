@@ -85,7 +85,7 @@ Bundle bundle=new Bundle();
             switch (v.getId()){
                 case R.id.notes:
                     selectedFragment= new NotesActivity();
-
+                    selectedFragment.setArguments(bundle);
                     cours.setTextColor(getResources().getColor(R.color.gristransparent));
                     profil.setTextColor(getResources().getColor(R.color.gristransparent));
                     notes.setTextColor(getResources().getColor(R.color.jaune));
